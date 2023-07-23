@@ -10,25 +10,12 @@ int main(void)
 {
 	int len;
 	int len2;
-	int std;
-	int ours;
 	unsigned int ui;
-	void *addr;
-	int n1;
-	int n2;
-	int num1;
-	int num2;
-
-	n1 = 0;
-	n2 = 0;
-	num1 = 0;
-	num2 = 0;
 
 
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
-	addr = (void *)0x7ffe637541f0;
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i], [%d, %i]\n", len2, len2, len, len);
 	_printf("Negative:[%d]\n", -762534);
@@ -47,7 +34,7 @@ int main(void)
 	printf("Character:[%c%c]\n", 'H', 'I');
 	_printf("Character:[%c%c%c]\n", 'H', 'I', '!');
 	printf("Character:[%c%c%c]\n", 'H', 'I', '!');
-
+/**
 	_printf("Character:[%c %c %c]\n", 'H', 'I', '!');
 	printf("Character:[%c %c %c]\n", 'H', 'I', '!');
 	_printf("Two c with Space:[%c %c]\n", 'H', 'I');
@@ -73,8 +60,6 @@ int main(void)
 	printf("Len:[%d]\n", len2);
 	_printf("Reverse:[%r]\n", "I am a string !");
 	printf("Reversed:[%r]\n", "I am a string !");
-	/* _printf("Unknown:[%r]\n");*/
-	/* printf("Unknown:[%r]\n");*/
 	_printf("Binary:[%b]\n", 98);
 	printf("Binary:[%b]\n", 98);
 	_printf("Decimal:[%i]\n", 58);
@@ -257,6 +242,6 @@ int main(void)
 	num2 = printf("Null hexadecimal:[%X]\n", NULL);
 	printf("num1:[%d]\n", num1);
 	printf("num2:[%d]\n", num2);
-
+*/
 	return (0);
 }
